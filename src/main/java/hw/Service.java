@@ -50,4 +50,22 @@ public class Service {
         session.getTransaction().commit();
     }
 
+    public void deleteProductById(Integer id){
+        Product prodFordel = new Product();
+        prodFordel.setId(id);
+        session = factory.getCurrentSession();
+        session.beginTransaction();
+        session.delete(prodFordel);
+        session.getTransaction().commit();
+    }
+
+    public void deleteCustomerById(Integer id){
+        Customer custFordel = new Customer();
+        custFordel.setId(id);
+        session = factory.getCurrentSession();
+        session.beginTransaction();
+        session.delete(custFordel);
+        session.getTransaction().commit();
+    }
+
 }

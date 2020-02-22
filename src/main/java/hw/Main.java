@@ -57,7 +57,9 @@ public class Main {
 
         service.showProductById(3); //Показать товар по id и его Покупателей
 
+        service.deleteCustomerById(22); //Удаление Покупателя по id
 
+        service.deleteProductById(5); //Удаление Продукта по id
 
         service.closeFactory();
     }
