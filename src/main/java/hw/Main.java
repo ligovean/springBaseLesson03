@@ -46,8 +46,7 @@ public class Main {
         //Создать нового Покупателя с Новыми продуктами
         Customer customer1 = new Customer("Vlad");
         List<Product> products = new ArrayList<>();
-        //products.add(new Product("Milk",5.3f)); //Не удалось реализовать создание товаров налету в контектсте создания
-        // Покупателя Вопрос в личке
+       // products.add(new Product("Milk",5.3f)); //Не удалось реализовать создание товаров налету в контектсте создания Покупателя. Вопрос в личке
 
         service.insertCustomerWithProducts(customer1,products);
 
@@ -57,7 +56,7 @@ public class Main {
 
         service.showProductById(3); //Показать товар по id и его Покупателей
 
-        service.deleteCustomerById(22); //Удаление Покупателя по id
+        service.deleteCustomerById(21); //Удаление Покупателя по id
 
         service.deleteProductById(5); //Удаление Продукта по id
 
