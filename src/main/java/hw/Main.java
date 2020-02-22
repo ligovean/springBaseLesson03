@@ -56,7 +56,7 @@ public class Main {
 
         service.showProductById(3); //Показать товар по id и его Покупателей
 
-        service.deleteCustomerById(21); //Удаление Покупателя по id
+        service.deleteCustomerById(23); //Удаление Покупателя по id
 
         service.deleteProductById(5); //Удаление Продукта по id
 
